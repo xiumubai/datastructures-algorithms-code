@@ -2,7 +2,7 @@
 
 |                                                                                                              题目                                                                                                              | 难度 |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--: |
-|                     [剑指 Offer 04. 二维数组中的查找](https://github.com/lzxjack/coding-interviews/blob/master/problems/04.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE.md)                     | 中等 |
+|                                                                              [剑指 Offer 04. 二维数组中的查找](./docs/04.%20二维数组中的查找.md)                                                                               | 中等 |
 |               [剑指 Offer 11. 旋转数组的最小数字](https://github.com/lzxjack/coding-interviews/blob/master/problems/11.%20%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%97.md)                | 简单 |
 | [剑指 Offer 53 - I. 在排序数组中查找数字 I](https://github.com/lzxjack/coding-interviews/blob/master/problems/53%20-%20I.%20%E5%9C%A8%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E6%95%B0%E5%AD%97%20I.md) | 简单 |
 |              [剑指 Offer 53 - II. 0 ～ n-1 中缺失的数字](https://github.com/lzxjack/coding-interviews/blob/master/problems/53%20-%20II.%200%EF%BD%9En-1%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E6%95%B0%E5%AD%97.md)              | 简单 |
