@@ -2,24 +2,34 @@
  * @Author: 朽木白
  * @Date: 2022-06-29 16:59:03
  * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-06-29 17:11:49
- * @Description:
+ * @LastEditTime: 2022-06-30 00:08:23
+ * @Description:不重复的最长字符串:
  */
-var lengthOfLongestSubstring = function (s) {
-  const occ = new Set();
-  const n = s.length;
-  let rk = -1,
-    ans = 0;
-  for (let i = 0; i < n; ++i) {
-    if (i != 0) {
-      occ.delete(s.charAt(i - 1));
-    }
-    while (rk + 1 < n && !occ.has(s.charAt(rk + 1))) {
-      occ.add(s.charAt(rk + 1));
-      ++rk;
-    }
 
-    ans = Math.max(ans, rk - i + 1);
+// https://leetcode.cn/problems/longest-substring-without-repeating-characters/solution/3-wu-zhong-fu-zi-fu-de-zui-chang-zi-chua-b6ex/
+
+// 时间复杂度O(n) 空间复杂度O(m)
+var lengthOfLongestSubstring = function (s) {
+  const set = new Set();
+  let i = 0,
+    j = 0,
+    max = 0;
+
+  if (s.length === 0) {
+    return 0;
   }
-  return ans;
+  for (i; i < s.length; i++) {
+    if (!set.has(s[i])) {
+      set.add(s[i]);
+
+      max = Math.max(max, set.size);
+    } else {
+      while (set.has(s[i])) {
+        set.delete(s[j]);
+        j++;
+      }
+      set.add(s[i]);
+    }
+  }
+  return max;
 };
